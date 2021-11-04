@@ -1,0 +1,33 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Ensure a location for resource and resource groups",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/7b01280fea544cf3b555d336",
+  "scope": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy",
+  "notScopes": [],
+  "parameters": {
+   "Location": {
+    "value": [
+     "westeurope"
+    ]
+   }
+  },
+  "metadata": {
+   "assignedBy": "Jordi Triquell",
+   "parameterScopes": {
+    "Location": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy"
+   },
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-11-04T15:21:08.034307Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policyAssignments/a0cbe5cc45ee4372b5c07a98",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "a0cbe5cc45ee4372b5c07a98"
+}

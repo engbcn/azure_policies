@@ -1,0 +1,30 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Enforce CostCenter Tag",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/45595ff2655f45598e5745e9",
+  "scope": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy",
+  "notScopes": [],
+  "parameters": {
+   "TAGNAME_1": {
+    "value": "CostCenter"
+   }
+  },
+  "description": "",
+  "metadata": {
+   "assignedBy": "Jordi Triquell",
+   "parameterScopes": {},
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-10-20T05:05:40.4498356Z",
+   "updatedBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "updatedOn": "2021-10-20T05:18:22.490592Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policyAssignments/ae43d6705e0045438d2912ab",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "ae43d6705e0045438d2912ab"
+}

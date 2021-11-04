@@ -1,0 +1,60 @@
+{
+ "properties": {
+  "displayName": "Allowed Locations for Resource and Resource Groups",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "parameterScopes": {
+    "listOfAllowedLocations": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy"
+   },
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-11-04T15:12:58.7629376Z",
+   "updatedBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "updatedOn": "2021-11-04T15:24:57.4069784Z",
+   "category": "Resource Location"
+  },
+  "parameters": {
+   "Location": {
+    "type": "array",
+    "metadata": {
+     "displayName": "Allowed Locations",
+     "description": null,
+     "strongType": "location"
+    },
+    "defaultValue": []
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Allowed locations for resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": "[parameters('Location')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": "[parameters('Location')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Audit resource location matches resource group location_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0a914e76-4921-4c19-b460-a2d36003525a",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/7b01280fea544cf3b555d336",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "7b01280fea544cf3b555d336"
+}

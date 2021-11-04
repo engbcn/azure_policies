@@ -1,0 +1,62 @@
+{
+ "properties": {
+  "displayName": "Enforce Tag Values on Resource Groups and Resources",
+  "policyType": "Custom",
+  "description": "Enforce Tag Values on Resource Groups and Resources",
+  "metadata": {
+   "category": "Tags",
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-10-20T05:16:40.573311Z",
+   "updatedBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "updatedOn": "2021-11-04T15:26:39.7821199Z"
+  },
+  "parameters": {
+   "TAGNAME_1": {
+    "type": "string",
+    "metadata": {
+     "displayName": "Tag Name",
+     "description": null
+    }
+   },
+   "TAGVALUES_1": {
+    "type": "string",
+    "metadata": {
+     "displayName": "Tag Values",
+     "description": null
+    }
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Require a tag and its value on resources_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+    "parameters": {
+     "tagName": {
+      "value": "[parameters('TAGNAME_1')]"
+     },
+     "tagValue": {
+      "value": "[parameters('TAGVALUES_1')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag and its value on resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8ce3da23-7156-49e4-b145-24f95f9dcb46",
+    "parameters": {
+     "tagName": {
+      "value": "[parameters('TAGNAME_1')]"
+     },
+     "tagValue": {
+      "value": "[parameters('TAGVALUES_1')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/e9e29558482f42daaffcd0f7",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "e9e29558482f42daaffcd0f7"
+}

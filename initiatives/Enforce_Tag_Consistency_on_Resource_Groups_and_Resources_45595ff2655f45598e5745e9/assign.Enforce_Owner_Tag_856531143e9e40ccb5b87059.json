@@ -1,0 +1,30 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Enforce Owner Tag",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/45595ff2655f45598e5745e9",
+  "scope": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy",
+  "notScopes": [],
+  "parameters": {
+   "TAGNAME_1": {
+    "value": "Owner"
+   }
+  },
+  "description": "",
+  "metadata": {
+   "assignedBy": "Jordi Triquell",
+   "parameterScopes": {},
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-10-20T05:05:06.5288286Z",
+   "updatedBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "updatedOn": "2021-10-20T05:17:44.9544704Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policyAssignments/856531143e9e40ccb5b87059",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "856531143e9e40ccb5b87059"
+}

@@ -1,0 +1,30 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Enforce ServiceGroup Tag",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/45595ff2655f45598e5745e9",
+  "scope": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy",
+  "notScopes": [],
+  "parameters": {
+   "TAGNAME_1": {
+    "value": "ServiceGroup"
+   }
+  },
+  "description": "",
+  "metadata": {
+   "assignedBy": "Jordi Triquell",
+   "parameterScopes": {},
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-10-20T05:02:05.8579832Z",
+   "updatedBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "updatedOn": "2021-10-20T05:17:59.1621554Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policyAssignments/8ba9d196b89c4f0f963e3e9b",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "8ba9d196b89c4f0f963e3e9b"
+}

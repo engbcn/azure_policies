@@ -1,0 +1,59 @@
+{
+ "properties": {
+  "displayName": "Enforce Tag Consistency on Resource Groups and Resources",
+  "policyType": "Custom",
+  "description": "Requires Code tags on resource groups and applies those tags to resources within the resource group",
+  "metadata": {
+   "category": "Tags",
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-10-20T04:53:02.0314176Z",
+   "updatedBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "updatedOn": "2021-11-04T15:27:18.0606121Z"
+  },
+  "parameters": {
+   "TAGNAME_1": {
+    "type": "string",
+    "metadata": {
+     "displayName": "Tag Name 1",
+     "description": null
+    }
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Require a tag on resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/96670d01-0a4d-4649-9c89-2d3abc0a5025",
+    "parameters": {
+     "tagName": {
+      "value": "[parameters('TAGNAME_1')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value from the resource group_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9ea02ca2-71db-412d-8b00-7c7ca9fcd32d",
+    "parameters": {
+     "tagName": {
+      "value": "[parameters('TAGNAME_1')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Audit tag matches resource group_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policyDefinitions/056512c4-1c1c-4a40-8d53-38806b8186f2",
+    "parameters": {
+     "tagName": {
+      "value": "[parameters('TAGNAME_1')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/45595ff2655f45598e5745e9",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "45595ff2655f45598e5745e9"
+}

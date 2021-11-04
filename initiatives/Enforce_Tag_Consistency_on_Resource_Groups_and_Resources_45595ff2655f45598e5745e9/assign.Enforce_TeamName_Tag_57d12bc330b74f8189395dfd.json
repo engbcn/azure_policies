@@ -1,0 +1,30 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Enforce TeamName Tag",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policySetDefinitions/45595ff2655f45598e5745e9",
+  "scope": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy",
+  "notScopes": [],
+  "parameters": {
+   "TAGNAME_1": {
+    "value": "TeamName"
+   }
+  },
+  "description": "",
+  "metadata": {
+   "assignedBy": "Jordi Triquell",
+   "parameterScopes": {},
+   "createdBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "createdOn": "2021-10-20T05:04:33.6232159Z",
+   "updatedBy": "ab664d2d-43f7-4503-bd18-6e10c69e1a3b",
+   "updatedOn": "2021-10-20T05:17:24.5992013Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-tagpolicy/providers/Microsoft.Authorization/policyAssignments/57d12bc330b74f8189395dfd",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "57d12bc330b74f8189395dfd"
+}
